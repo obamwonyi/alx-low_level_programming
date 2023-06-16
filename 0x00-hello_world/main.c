@@ -1,10 +1,9 @@
 #include "stdio.h"
 
-
 int main()
 {
 
-printf("This is some code ");
+printf("Hello World");
 
 return 0;
 }
