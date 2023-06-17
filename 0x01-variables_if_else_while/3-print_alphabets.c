@@ -8,17 +8,17 @@ int main(void)
 {
 	int n = 97;
 	int m = 65;
-	
+
 	while (n <= 122)
 	{
 		putchar(n);
 		n++;
 	}
-	while (n <= 90)
+	while (m <= 90)
 	{
-		putchar(n);
-		n++;
+		putchar(m);
+		m++;
 	}
-	puthchar('\n');
+	putchar('\n');
 	return (0);
 }
