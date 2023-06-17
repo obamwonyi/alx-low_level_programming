@@ -14,6 +14,10 @@ int main(void)
 		{
 			putchar(i);
 			putchar(j);
+			if (j == (58 - 1) && i == (58 - 2))
+			{
+				break;
+			}
 			putchar(',');
 			putchar(' ');
 		}
