@@ -1,5 +1,4 @@
 #include "main.h"
-#include "putchar.h"
 /**
 *jack_bauer - prints out the 24 ours time
 *Return: None
@@ -23,12 +22,11 @@ void jack_bauer(void)
 					_putchar(tensHours + 48);
 					_putchar(hours + 48);
 					_putchar(58);
-					_putchar(tensMin + 48)
+					_putchar(tensMin + 48);
 					_putchar(min + 48);
 					_putchar('\n');
 				}
 			}
 		}
 	}
-}
-					
+}			
