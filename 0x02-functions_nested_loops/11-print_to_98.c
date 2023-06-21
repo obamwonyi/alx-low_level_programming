@@ -1,5 +1,5 @@
+#include <stdio.h>
 #include "main.h"
-#include "putchar.h"
 /**
 *print_to_98 - print out all natural number
 *Return: None
@@ -10,25 +10,21 @@ void print_to_98(int n)
 	{
 		while (n >= 98)
 		{
-			_putchar(n );
+			printf(" %d", n);
 			n--;
 		}
 	}
 	else if (n == 98)
 	{
-		_putchar(n);
+		printf(" %d", n);
 	}
 	else
 	{
 		while (n <= 98)
 		{
-			_putchar(n + 48);
+			printf(" %d", n);
 			n++;
 		}
 	}
-}
-
-int main(void)
-{
-	print_to_98(111);
+	printf("\n");
 }
