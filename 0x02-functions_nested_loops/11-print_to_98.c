@@ -2,6 +2,7 @@
 #include "main.h"
 /**
 *print_to_98 - print out all natural number
+*@n: interger to print value from to 98
 *Return: None
 */
 void print_to_98(int n)
