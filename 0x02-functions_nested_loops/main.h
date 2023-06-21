@@ -1,5 +1,1 @@
-#include <stdio.h>
-/**
-*Description: for declaring variables 
-*/
-
+int _putchar(char c);	
