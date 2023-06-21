@@ -12,8 +12,8 @@ int print_last_digit(int x)
 	{
 		lastDigit = -1 * lastDigit;
 		_putchar(lastDigit);
-		return (0);
+		return (lastDigit);
 	}
 	_putchar(lastDigit);
-	return (0);
+	return (lastDigit);
 }
