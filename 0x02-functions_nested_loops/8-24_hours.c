@@ -15,7 +15,7 @@ void jack_bauer(void)
 			{
 				for (min = 0; min < 10; min++)
 				{
-					if(tensHours >= 2 && hours >= 4)
+					if (tensHours >= 2 && hours >= 4)
 					{
 						break;
 					}
@@ -29,4 +29,4 @@ void jack_bauer(void)
 			}
 		}
 	}
-}			
+}
