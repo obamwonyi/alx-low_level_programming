@@ -1,5 +1,5 @@
 /**
-* swap_int - swap integers
+* swap_int - swap integers values
 * @a: first integer
 * @b: second integer
 * Return: None
