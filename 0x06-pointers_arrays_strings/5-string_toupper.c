@@ -2,6 +2,7 @@
 #include "main.h"
 /**
 *string_toupper - convert lower case letters to uppercase
+*@str: string to convert
 *Return: char
 */
 char *string_toupper(char *str)
