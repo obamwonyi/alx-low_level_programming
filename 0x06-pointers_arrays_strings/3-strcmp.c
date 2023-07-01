@@ -15,11 +15,11 @@ int _strcmp(char *s1, char *s2)
 
 	while (s1[i])
 	{
-		if (s1[i] > s2[i])
+		if (((int)s1[i] - 48) > ((int)s2[i] - 48))
 		{
 			return (15);
 		}
-		else if (s1[i] < s2[i])
+		else if (((int)s1[i] - 48) < ((int)s2[i] - 48))
 		{
 			return (-15);
 		}
@@ -27,4 +27,4 @@ int _strcmp(char *s1, char *s2)
 	}
 
 	return (0);
-}		
+}
