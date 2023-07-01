@@ -11,7 +11,7 @@ int isLower(char c)
 }
 
 /**
-*isDelimiter: check if char c is a delimter(word separator)
+*isDelimiter - check if char c is a delimter(word separator)
 *@c: is the char passed to check if it is a delimiter
 *Return: int
 */
@@ -30,7 +30,7 @@ int isDelimiter(char c)
 	return (0);
 }
 /**
-*cap_string: return a string with capitalized words
+*cap_string - return a string with capitalized words
 *@str: string to be capitalized
 *Return: string
 */
