@@ -1,60 +1,62 @@
 #include "main.h"
 #include <stdio.h>
-/**
-*isLower - check if c is lower case
-*@c: is the char passed to be checked for lowercase
-*Return: int
-*/
-int isLower(char c)
-{
-	return (c > 96 && c < 123);
-}
 
 /**
-*isDelimiter - check if char c is a delimter(word separator)
-*@c: is the char passed to check if it is a delimiter
-*Return: int
+*lower - checks if the chars passed is lower
+*@i: the char passed as an argument
+*Return: true(1) or false(0)
 */
-int isDelimiter(char c)
+int lower(char i)
+{
+	return (i >= 97 && i <= 122);
+}
+/**
+*delimiter - check if the char is a delimeter
+*@c: the char to check
+*Return: 0 for false , 1 for true;
+*/
+int delimiter(char c)
 {
 	int i;
-	char delimiter[] = " \t\n,.!?\"(){}";
+
+	char delimiter[] = "\t\n,.!?\"[]{} ";
 
 	for (i = 0; i < 12; i++)
 	{
 		if (c == delimiter[i])
 		{
-			return (i);
+			return (1);
 		}
 	}
 	return (0);
 }
 /**
-*cap_string - return a string with capitalized words
-*@str: string to be capitalized
-*Return: string
+*cap_string - capitalize first letters
+*@s: string to capitalize
+*Return: capitalized string
 */
-char *cap_string(char *str)
+char *cap_string(char *s)
 {
-	char *ptr = str;
+	char *ptr = s;
+
 	int foundDelimit = 1;
 
-	while (*str)
+	while (*s)
 	{
-		if (isDelimiter(*str))
+		if (delimiter(*s))
 		{
 			foundDelimit = 1;
 		}
-		else if (isLower(*str) && foundDelimit)
+		else if (lower(*s) && foundDelimit)
 		{
-			*str -= 32;
+			*s -= 32;
 			foundDelimit = 0;
 		}
 		else
 		{
 			foundDelimit = 0;
 		}
-		str++;
+		s++;
 	}
 	return (ptr);
 }
