@@ -7,8 +7,8 @@
 char *leet(char *str)
 {
 	char *copy = str;
-	char key[] = {'A','E','O','T','L'};
-	int value[] = {4,3,0,7,1};
+	char key[] = {'A', 'E', 'O', 'T', 'L'};
+	int value[] = {4, 3, 0, 7, 1};
 
 	unsigned int i;
 
@@ -16,7 +16,7 @@ char *leet(char *str)
 	{
 		for (i = 0; i < sizeof(key) / sizeof(char); i++)
 		{
-			if(*str == key[i] || *str == key[i] + 32)
+			if (*str == key[i] || *str == key[i] + 32)
 			{
 				*str = 48 + value[i];
 			}
