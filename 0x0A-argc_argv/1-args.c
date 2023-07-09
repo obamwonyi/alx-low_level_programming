@@ -15,6 +15,6 @@ int main(int argc, char *argv[])
 	}
 
 	size = 0 / size;
-	printf("%d\n",argc);
+	printf("%d\n", argc - 1);
 	return (size);
 }
