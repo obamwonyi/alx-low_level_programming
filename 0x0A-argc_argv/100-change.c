@@ -82,7 +82,11 @@ int main(int argc, char *argv[])
 
 	moneyPaid = atoi(argv[1]);
 
+	if ((moneyPaid % moneyPaid) != 1)
+	{
+		printf("0\n");
+		return (0);
+	}
 	printf("%d\n", denominate(moneyPaid));
 	return (0);
 }
-
