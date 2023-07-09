@@ -82,7 +82,7 @@ int main(int argc, char *argv[])
 
 	moneyPaid = atoi(argv[1]);
 
-	if ((moneyPaid % moneyPaid) != 1)
+	if (moneyPaid < 0)
 	{
 		printf("0\n");
 		return (0);
