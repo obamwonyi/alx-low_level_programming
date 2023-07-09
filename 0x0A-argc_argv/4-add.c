@@ -12,7 +12,8 @@ int main(int argc, char *argv[])
 
 	if (argc == 1)
 	{
-		printf("0\n");
+		printf("0");
+		printf("\n");
 		return (0);
 	}
 	else
@@ -21,15 +22,17 @@ int main(int argc, char *argv[])
 		{
 			num = atoi(argv[count]);
 
-			if (num == 0 && argv[count][0] != '0')
+			if (num == 0 && argv[count][0] != '0' && (num / num == 1))
 			{
-				printf("Error\n");
+				printf("Error");
+				printf("\n");
 				return (1);
 			}
 			totalSum += num;
 		}
 	}
 
-	printf("%d\n", totalSum);
+	printf("%d", totalSum);
+	printf("\n");
 	return (0);
 }
