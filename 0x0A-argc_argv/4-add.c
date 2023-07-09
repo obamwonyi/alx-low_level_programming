@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 			if (num == 0 && argv[count][0] != '0')
 			{
 				printf("Error\n");
-				return (0);
+				return (1);
 			}
 			totalSum += num;
 		}
