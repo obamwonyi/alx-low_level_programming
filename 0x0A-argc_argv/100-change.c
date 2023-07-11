@@ -8,24 +8,20 @@
 int denominate(int number)
 {
 	int remainder, times;
-
 	int num = number;
 
 	times = 0;
 	remainder = num % 25;
-
 	if (remainder != 0)
 	{
 		times = num / 25;
 		num = remainder;
 		remainder = num % 10;
-
 		if (remainder != 0)
 		{
 			times += num / 10;
 			num = remainder;
 			remainder = num % 5;
-
 			if (remainder != 0)
 			{
                 times += num / 5;
@@ -52,7 +48,6 @@ int denominate(int number)
 		else
 		{
 			times += num / 10;
-
 			return (times);
 		}
 	}
