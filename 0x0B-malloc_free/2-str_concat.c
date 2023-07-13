@@ -1,5 +1,21 @@
 #include "main.h"
 /**
+* _strlen - check the length of a string
+*@s: string (pointer)
+*Return: int
+*/
+int _strlen(char *s)
+{
+	int size = 0;
+
+	while (s[size] != '\0')
+	{
+		size++;
+	}
+
+	return (size);
+}
+/**
 *str_concat - concat two strings
 *@s1: string one
 *@s2: string two
