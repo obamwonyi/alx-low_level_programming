@@ -11,8 +11,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *str;
 	unsigned int i, j;
-	unsigned int s1Length = 0;
-	unsigned int s2Length = 0;
+	unsigned int s1_length= 0;
+	unsigned int s2_length = 0;
 
 	/** check if s1 is null */
 	if (s1 == NULL)
@@ -21,17 +21,17 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == NULL)
 		s2 = "";
 	/**loop for as long as s1 current value is not null zero*/
-	while (s1[str1Length] != '\0')
-		s1Length++;
+	while (s1[s1_length] != '\0')
+		s1_length++;
 	/**loop for as long as s2 current value is not null zero*/
-	while (s2[str2Length] != '\0')
-		s2Length++;
-	str = malloc(s1Length + n + 1);
+	while (s2[s2_length] != '\0')
+		s2_length++;
+	str = malloc(s1_length + n + 1);
 	/** if no pointer was addressed return null */
 	if (str == NULL)
 		return (NULL);
 	/** fill str (array) with s1 values */
-	for (i == 0; s1[i] != '\0'; i++)
+	for (i = 0; s1[i] != '\0'; i++)
 		str[i] = s1[i];
 	/**now add s2 value to str */
 	for (j = 0; j < n; j++)
