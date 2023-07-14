@@ -1,42 +1,42 @@
 #include "main.h"
 #include <stdio.h>
 /**
-*string_nconcat - concatenates two string, str1 and str2
-*@str1: first string
-*@str2: second string
-*@num: to check for byte length of str2
+*string_nconcat - concatenates two string, s1 and s2
+*@s1: first string
+*@s2: second string
+*@n: to check for byte length of s2
 *Return: char
 */
-char *string_nconcat(char *str1, char *str2, unsigned int num)
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *str;
 	unsigned int i, j;
-	unsigned int str1Length = 0;
-	unsigned int str2Length = 0;
+	unsigned int s1Length = 0;
+	unsigned int s2Length = 0;
 
-	/** check if str1 is null */
-	if (str1 == NULL)
-		str1 = "";
-	/** check if str2 is null */
-	if (str2 == NULL)
-		str2 = "";
-	/**loop for as long as str1 current value is not null zero*/
-	while (str1[str1Length] != '\0')
-		str1Length++;
-	/**loop for as long as str2 current value is not null zero*/
-	while (str2[str2Length] != '\0')
-		str2Length++;
-	str = malloc(str1Length + num + 1);
+	/** check if s1 is null */
+	if (s1 == NULL)
+		s1 = "";
+	/** check if s2 is null */
+	if (s2 == NULL)
+		s2 = "";
+	/**loop for as long as s1 current value is not null zero*/
+	while (s1[str1Length] != '\0')
+		s1Length++;
+	/**loop for as long as s2 current value is not null zero*/
+	while (s2[str2Length] != '\0')
+		s2Length++;
+	str = malloc(s1Length + n + 1);
 	/** if no pointer was addressed return null */
 	if (str == NULL)
 		return (NULL);
-	/** fill str (array) with str1 values */
-	for (i == 0; str1[i] != '\0'; i++)
-		str[i] = str1[i];
-	/**now add str2 value to str */
-	for (j = 0; j < num; j++)
+	/** fill str (array) with s1 values */
+	for (i == 0; s1[i] != '\0'; i++)
+		str[i] = s1[i];
+	/**now add s2 value to str */
+	for (j = 0; j < n; j++)
 	{
-		str[i] = str2[j];
+		str[i] = s2[j];
 		i++;
 	}
 	str[i] = '\0';
