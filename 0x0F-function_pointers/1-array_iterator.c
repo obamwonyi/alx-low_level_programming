@@ -8,11 +8,11 @@
 */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	int *stop = (size - 1) + array;
+	int *end = (size - 1) + array;
 
 	if (array && size && action)
 	{
-		while (array <= stop)
+		while (array <= end)
 		{
 			action(*array++);
 		}
