@@ -1,3 +1,4 @@
+#include "3-calc.h"
 /**
 *get_op_func - returns the pointer to an op function
 *@s: operator

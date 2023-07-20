@@ -9,7 +9,7 @@
 *@op: The struct operator
 *@f: function
 */
-typedef struct op_t
+typedef struct op
 {
 	char *op;
 	int (*f)(int a, int b);
