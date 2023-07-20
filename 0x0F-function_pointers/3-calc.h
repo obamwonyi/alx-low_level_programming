@@ -1,3 +1,6 @@
+#ifndef CALC_H
+#define CALC_H
+
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -6,10 +9,10 @@
 *@op: The struct operator
 *@f: function
 */
-typedef struct op
+typedef struct op_t
 {
 	char *op;
-	int (*f)(int a, intb);
+	int (*f)(int a, int b);
 } op_t;
 
 int op_add(int a, int b);
