@@ -1,4 +1,4 @@
-#include <variadic_functions.h>
+#include "variadic_functions.h"
 /**
 *sum_them_all - sum all the values passed as argument to the function
 *@n : series of integer values to be resived by the function
@@ -17,7 +17,7 @@ int sum_them_all(const unsigned int n, ...)
 
 	va_start(argsList, n);
 
-	while (numArgs)
+	while (numArgs--)
 	{
 		sumTotal += va_arg(argsList, int);
 	}
