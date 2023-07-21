@@ -59,7 +59,7 @@ void print_all(const char * const format, ...)
 		{"f", format_float},
 		{"s", format_string},
 		{NULL, NULL}
-	}
+	};
 
 	va_start(ap, format);
 
@@ -69,7 +69,7 @@ void print_all(const char * const format, ...)
 
 		while (tokens[j].token)
 		{
-			if (format[i] == token[j]. token[0])
+			if (format[i] == tokens[j]. token[0])
 			{
 				tokens[j].f(separator, ap);
 				separator = ", ";
@@ -81,5 +81,4 @@ void print_all(const char * const format, ...)
 
 	printf("\n");
 	va_end(ap);
-}
 }
