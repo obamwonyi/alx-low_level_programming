@@ -3,13 +3,15 @@
 #include "stdlib.h"
 /**
 * _strlen - returns string length
-* @s: string 
+* @s: string
 * Return: int
 */
 int _strlen(char *s)
 {
 	int size = 0;
-	for (; s[size] != '\0'; size++);
+
+	for (; s[size] != '\0'; size++)
+	;
 
 	return (size);
 }
@@ -37,7 +39,7 @@ char *str_concat(char *s1, char *s2)
 	m = malloc((size1 + size2) * sizeof(char) + 1);
 
 	if (m == 0)
-		return 0;
+		return (0);
 
 	for (i = 0; i <= size1 + size2; i++)
 	{
@@ -49,5 +51,5 @@ char *str_concat(char *s1, char *s2)
 
 	m[i] = '\0';
 
-	return (m);	
+	return (m);
 }
