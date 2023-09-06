@@ -17,7 +17,8 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	while (str[size] != '\0') size++;
+	while (str[size] != '\0')
+		size++;
 
 	newPointer = (char *)malloc(size * sizeof(*str) + 1);
 
