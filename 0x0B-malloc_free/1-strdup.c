@@ -8,21 +8,29 @@
 char *_strdup(char *str)
 {
 
-	char *newPointer = (char *)malloc(strlen(str) + 1);
-
+	int i = 0;
+	int size = 0;
+	char *newPointer;
 
 	if (str == NULL)
 	{
 		return (NULL);
 	}
 
+	while (str[size] != '\0') size++;
+
+	newPointer = (char *)malloc(size * sizeof(*str) + 1);
+
 	if (newPointer == 0)
 	{
 		return (NULL);
 	}
 
-	strcpy(newPointer, str);
+	while (i < size)
+	{
+		newPointer[i] = str[i];
+		i++;
+	}
 
 	return (newPointer);
-
 }
