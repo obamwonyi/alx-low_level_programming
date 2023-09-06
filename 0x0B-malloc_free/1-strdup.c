@@ -16,7 +16,7 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	if (newPointer == NULL)
+	if (newPointer == 0)
 	{
 		return (NULL);
 	}
