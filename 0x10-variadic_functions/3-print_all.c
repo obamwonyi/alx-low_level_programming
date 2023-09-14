@@ -21,7 +21,7 @@ void format_int(char *separator, va_list ap)
 }
 
 /**
-* formatfloat - formats float
+* format_float - formats float
 * @separator: the string separator
 * @ap: argument pointer
 */
